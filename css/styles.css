@@ -1,3 +1,5 @@
+/* Fonts: Montserrat, Playfair Display, Outfit */
+
 body {
     display: flex;
     justify-content: center;
@@ -8,10 +10,20 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: column;
+    background: radial-gradient(ellipse at center, #222222, #000000);
 }
 
 .centered {
     color: white;
     font-family: "Montserrat";
     font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 36px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
