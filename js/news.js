@@ -44,7 +44,7 @@ function createBlocks(items) {
             header.appendChild(tagsContainer);
         
             const whatsUpDiv = document.createElement('div');
-            whatsUpDiv.classList.add('size-20', 'grey', 'playfair', 'semibold');
+            whatsUpDiv.classList.add('size-20', 'grey', 'playfair', 'semibold', 'whatsup');
             whatsUpDiv.textContent = "What's Up!"; // This text is static
             header.appendChild(whatsUpDiv);
         
