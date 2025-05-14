@@ -259,7 +259,21 @@ p.text_news {
     color: auto;
 }
 
+.whatsup {
+    display: auto;
+}
+
+.SPACER {
+    display: none;
+    width: 10px;
+    min-height: 130px;
+}
+
 @media screen and (max-width: 1200px) {
+    .tag {
+        padding: 0 10px;
+    }
+
     img {
         display: none;
     }
@@ -298,5 +312,13 @@ p.text_news {
 
     .size-24 {
         font-size: 20px;
+    }
+
+    .whatsup {
+        display: none;
+    }
+
+    .SPACER {
+        display: block;
     }
 }
