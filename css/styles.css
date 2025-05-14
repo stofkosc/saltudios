@@ -1,29 +1,302 @@
 /* Fonts: Montserrat, Playfair Display, Outfit */
+/*===========================================================================
+FONTS & ICONS
+===========================================================================*/
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+}
+  
+.material-symbols-filled {
+    font-family: 'Material Symbols Filled';
+}
+  
+  /* Specific styles for 20px, weight 700 */
+.size-20-weight-700 {
+    font-variation-settings:
+    'opsz' 20,
+    'wght' 700
+}
+
+.size-48-weight-100 {
+  font-variation-settings:
+  'wght' 100,
+  'opsz' 48
+}
+  
+/* Example using fill */
+.filled {
+    font-variation-settings: 'FILL' 1;
+}
+
+/*===========================================================================
+
+===========================================================================*/
+
 
 body {
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     max-height: 100vh;
+    min-height: 100vh;
     background-color: black;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    background: radial-gradient(ellipse at center, #222222, #000000);
-}
-
-.centered {
     color: white;
     font-family: "Montserrat";
-    font-weight: 400;
-    letter-spacing: -3px;
-    line-height: 36px;
+    margin: 0;
+    padding: 20px;
+    flex-direction: column;
+    background: radial-gradient(ellipse at center, #222222, #000000);
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    width: 100vw;
+    max-width: 100%;
+    background: linear-gradient(to bottom, #00000000, #000000);
+    z-index: 99;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1.saltudios {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Outfit";
+    letter-spacing: 8px;
+    font-size: 24px;
+    font-weight: 500;
     text-align: center;
 }
 
-a {
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.size-20 {
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.size-24 {
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+.size-48 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    line-height: 100%;
+}
+
+.grey {
+    color: #6C6C6C;
+}
+
+.dark-grey {
+    color: #2F2F2F;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 700;
+}
+
+p.centered {
+    text-align: center;
+}
+
+.outfit {
+    font-family: "Outfit";
+}
+
+.playfair {
+    font-family: "Playfair Display";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.FRAME_saltudios_banner {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FRAME_news {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.FRAME_news_wrapper {
+    width: 200px;
+    border-radius: 50px;
+    overflow: hidden;
+    filter: blur(4px);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.FRAME_news_wrapper:hover {
+    width: 600px;
+    filter: blur(0);
+}
+
+.FRAME_news_block {
+    width: 600px;
+    height: 500px;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #AEAEAE;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.FRAME_news_block_header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.FRAME_news_block_tags {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+a.LINK_medium {
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     color: white;
-    font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    border-radius: 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+a.LINK_medium:hover {
+    border: 1px solid #2F2F2F;
+    color: #2F2F2F;
+}
+
+.tag {
+    height: 30px;
+    margin: 0;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit";
+    font-size: 13px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.tag-grey {
+    border: 1px solid #6C6C6C;
+    color: #6C6C6C;
+}
+
+/* SPECIAL */
+
+p.text_news {
+    flex: 1;
+}
+
+.to-white {
+    color: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    img {
+        display: none;
+    }
+
+    body {
+        max-height: 100%;
+        overflow:visible;
+    }
+
+    .FRAME_news {
+        flex-direction: column;
+    }
+
+    .FRAME_news_block {
+        height: auto;
+        margin: 0;
+        width: auto;
+    }
+
+    .FRAME_news_wrapper {
+        filter: blur(0);
+        width: 100%;
+    }
+
+    .FRAME_news_wrapper:hover {
+        width: 100%;
+    }
+
+    .to-white {
+        color: #AEAEAE;
+    }
+
+    .size-48 {
+        font-size: 40px;
+    }
+
+    .size-24 {
+        font-size: 20px;
+    }
 }
